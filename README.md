@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15287085.svg)](https://doi.org/10.5281/zenodo.15287085)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15380270.svg)](https://doi.org/10.5281/zenodo.15380270)
 ![Topics: quantum-circuit, decoherence, feedback, self-organization, PiTer](https://img.shields.io/badge/topics-quantum--circuit%2C%20decoherence%2C%20feedback%2C%20self--organization%2C%20PiTer-blue)
 
 # Quantum Feedback Structure over Decoherence Space
